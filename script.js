@@ -1,3 +1,5 @@
+
+
 const add = (a, b) => {
     return a + b;
 }
@@ -31,3 +33,20 @@ const operate = (operator, a, b) => {
 
     }
 }
+
+const numbers = document.querySelectorAll('.numbers');
+const displayText = document.querySelector('.display-text');
+
+let currentVal = 0;
+numbers.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        let num = parseInt(e.target.value);
+        displayText.innerHTML = num;
+    })
+    
+   
+})
+
+
+
+
